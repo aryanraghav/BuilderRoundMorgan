@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Event Question Submission System
 
-## Getting Started
+This project is an implementation of a system for capturing questions from participants during a live event. It allows event organizers to create events, generate unique URLs for participants to submit questions, and optionally set a time to live (TTL) for these URLs.
 
-First, run the development server:
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Demo](#demo)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+1. **Event Creation Interface:**
+   - Create new events with details such as event name, description, date, time, and optional TTL.
+
+2. **Unique URL Generation:**
+   - Automatically generate a unique URL for each event upon creation.
+   - Shareable URLs for participants to access the question submission interface.
+
+3. **Question Submission Interface:**
+   - Participants can submit their questions for the event using the unique URL.
+   
+4. **TTL for URLs (Bonus):**
+   - Optionally set a time to live (TTL) for URLs. After the specified TTL, the URL expires and no longer accepts new questions.
+
+## Technologies Used
+
+- Next.js: A React framework for building the frontend.
+- React: JavaScript library for building user interfaces.
+- TypeScript: Typed superset of JavaScript.
+- CSS: For styling the components.
+- [Additional technologies used in your project, e.g., state management libraries, APIs, databases, etc.]
+
+## Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+git clone https://github.com/your-username/event-question-submission.git
+cd event-question-submission
